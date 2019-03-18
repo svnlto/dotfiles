@@ -80,7 +80,7 @@ SPACESHIP_PROMPT_ORDER=(
   node          # Node.js section
   elixir        # Elixir section
   ruby          # Ruby section
-  go            # Go section
+  golang        # Go section
   package       # npm
   docker        # Docker section
   line_sep      # Line break
