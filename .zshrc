@@ -101,8 +101,6 @@ ulimit -n 4096
 
 # launch tmux
 alias tmux="tmux -2"
-if [[ $TERM == xterm ]]; then TERM=xterm-256color fi
-if [ "$TMUX" = "" ]; then tmux; fi
 
 # iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
