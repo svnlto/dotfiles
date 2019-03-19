@@ -55,6 +55,7 @@ cask "docker"
 cask "skype"
 cask "slack"
 cask "spotify"
+cask "spectacle"
 cask "flux"
 cask "iterm2"
 cask "tower2"
@@ -81,5 +82,4 @@ mas "Bear", id: 1091189122
 mas "Display Menu", id: 549083868
 mas "Keynote", id: 409183694
 mas "Notability", id: 409183694
-mas "Divvy", id: 413857545
 mas "Numbers", id: 409203825
