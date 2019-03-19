@@ -1,7 +1,9 @@
 # Sven's Dotfiles
 
-Basically a tweaked version of [Dries's dotfiles](https://github.com/driesvints/dotfiles).
+Basically a fork of [Dries's dotfiles](https://github.com/driesvints/dotfiles).
 
+Adding asdf for dependency management, installing nodejs, elixir, erlang, golang, ruby and terraform.
+As well as my custom zplug and tmux configuration.
 
 ### Setting up your Mac
 
