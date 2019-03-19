@@ -33,6 +33,7 @@ brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 brew "watchman"
+brew "kubectl"
 
 # Heroku
 brew "heroku"
@@ -55,6 +56,8 @@ cask "iterm2"
 cask "tower2"
 cask "visual-studio-code"
 cask "virtualbox"
+cask "google-cloud-sdk"
+cask "minikube"
 
 # Quicklook
 cask "qlcolorcode"
@@ -64,16 +67,15 @@ cask "quicklook-csv"
 cask "qlstephen"
 
 # Fonts
-cask "font-lato"
-cask "font-open-sans"
-cask "font-roboto"
-cask "font-source-code-pro-for-powerline"
-cask "font-source-code-pro"
-cask "font-source-sans-pro"
-cask "font-source-serif-pro"
 cask "font-hack"
 
 # Mac App Store
 mas "1Password", id: 1333542190
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723 
+mas "Bear", id: 1091189122 
+mas "Display Menu", id: 549083868
+mas "Keynote", id: 409183694
+mas "Notability", id: 409183694
+mas "Divvy", id: 413857545
+mas "Numbers", id: 409203825
