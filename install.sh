@@ -37,6 +37,12 @@ $HOME/.asdf/bin/private/asdf-exec ruby bin/bundle config --global jobs $((number
 # Configures ASDF tool versions
 ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"
 
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Symlink tmux config file to the home directory
+ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
