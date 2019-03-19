@@ -34,6 +34,9 @@ brew "tmux"
 brew "vim"
 brew "watchman"
 brew "kubectl"
+brew "kubernetes-helm"
+brew "wget"
+brew "jq"
 
 # Heroku
 brew "heroku"
@@ -47,6 +50,7 @@ brew "imagemagick"
 # Apps
 cask "alfred"
 cask "google-chrome"
+cask "google-chrome-canary"
 cask "docker"
 cask "skype"
 cask "slack"
