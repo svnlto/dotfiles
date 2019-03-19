@@ -13,7 +13,6 @@ alias projects="cd $HOME/Projects"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
 # Docker
-alias docker-composer="docker-compose"
 #alias dstop="docker stop $(docker ps -a -q)"
 #alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
 #alias dpurgeimages="docker rmi $(docker images -q)"
@@ -21,13 +20,7 @@ alias docker-composer="docker-compose"
 #dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 
 # Git
-alias commit="git add . && git commit -m"
-alias gcommit="git add . && git commit"
-alias wip="commit wip"
-alias gst="git status"
-alias gb="git branch"
-alias gc="git checkout"
-alias gd="git diff"
-alias gl="git log --oneline --decorate --color"
-alias gnuke="git clean -df && git reset --hard"
 alias git-prune='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
+
+# TMUX
+alias tmux="tmux -2"

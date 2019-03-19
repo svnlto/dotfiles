@@ -24,6 +24,7 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Add ASDF plugins
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git;
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git;
 asdf plugin-add golang https://github.com/kennyp/asdf-golang.git;
@@ -42,6 +43,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Symlink tmux config file to the home directory
 ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
+
+# Install ruby gems
+gem install git-smart
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

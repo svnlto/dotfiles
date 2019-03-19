@@ -18,7 +18,7 @@ sudo pmset -a standbydelay 86400
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
-# Set sidebar icon size to medium
+# Set sidebar icon size to small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
 # Increase window resize speed for Cocoa applications
@@ -66,6 +66,11 @@ sudo systemsetup -settimezone "Asia/Bangkok" > /dev/null
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Enable press and hold key repeat
+defaults delete -g ApplePressAndHoldEnabled
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
 
 ###############################################################################
 # Screen                                                                      #
@@ -303,6 +308,10 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Terminal" "iCal"; do
     killall "${app}" &> /dev/null
 done
+
+# Clearing the icon cache in Mojave
+sudo rm -rfv /Library/Caches/com.apple.iconservices.store
+sudo find /private/var/folders/ \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \;
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 

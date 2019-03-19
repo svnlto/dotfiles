@@ -65,6 +65,14 @@ SPACESHIP_NODE_SYMBOL='⬢'
 SPACESHIP_ELIXIR_SHOW=true
 SPACESHIP_ELIXIR_SYMBOL='⬢'
 
+# Ruby
+SPACESHIP_RUBY_SHOW=true
+SPACESHIP_RUBY_SYMBOL='⬢'
+
+# Go
+SPACESHIP_GOLANG_SHOW=true
+SPACESHIP_GOLANG_SYMBOL='⬢'
+
 SPACESHIP_PACKAGE_SYMBOL=true
 SPACESHIP_PACKAGE_SYMBOL='⬢'
 
@@ -92,15 +100,18 @@ SPACESHIP_PROMPT_ORDER=(
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
+# aliases 
+source $ZSH_CUSTOM/aliases.zsh
+
+# path
+source $ZSH_CUSTOM/path.zsh
+
 # nvim
 export NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 export EDITOR=nvim
 export REACT_EDITOR=nvim
 
 ulimit -n 4096
-
-# launch tmux
-alias tmux="tmux -2"
 
 # iex history
 export ERL_AFLAGS="-kernel shell_history enabled"
