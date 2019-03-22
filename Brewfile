@@ -63,6 +63,9 @@ cask "visual-studio-code"
 cask "virtualbox"
 cask "google-cloud-sdk"
 cask "minikube"
+cask "istat-menus"
+cask "little-snitch"
+cask "1password"
 
 # Quicklook
 cask "qlcolorcode"
@@ -73,9 +76,9 @@ cask "qlstephen"
 
 # Fonts
 cask "font-hack"
+cask "font-iosevka"
 
 # Mac App Store
-mas "1Password", id: 1333542190
 mas "The Unarchiver", id: 425424353
 mas "WhatsApp", id: 1147396723 
 mas "Bear", id: 1091189122 

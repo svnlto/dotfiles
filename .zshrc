@@ -76,9 +76,6 @@ SPACESHIP_GOLANG_SYMBOL='⬢'
 SPACESHIP_PACKAGE_SYMBOL=true
 SPACESHIP_PACKAGE_SYMBOL='⬢'
 
-# RUBY
-SPACESHIP_RUBY_SHOW=false
-
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stampts section
   user          # Username section

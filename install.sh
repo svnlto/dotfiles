@@ -24,6 +24,10 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 
+# Install asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+git checkout -b v0.7.0
+
 # Add ASDF plugins
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git;
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git;
@@ -32,11 +36,14 @@ asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git;
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git;
 asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git;
 
+# Install dependencies
+asdf install
+
 number_of_cores=$(sysctl -n hw.ncpu)
 $HOME/.asdf/bin/private/asdf-exec ruby bin/bundle config --global jobs $((number_of_cores - 1))
 
 # Configures ASDF tool versions
-ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"
+ln -sf $HOME/.dotfiles/.tool-versions $HOME/.tool-versions
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
