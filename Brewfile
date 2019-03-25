@@ -66,6 +66,7 @@ cask "minikube"
 cask "istat-menus"
 cask "little-snitch"
 cask "1password"
+cask "dash"
 
 # Quicklook
 cask "qlcolorcode"
