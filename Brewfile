@@ -12,6 +12,7 @@ brew "autoconf"
 brew "bash" # Bash 4
 brew "coreutils" # Those that come with macOS are outdated
 brew "git"
+brew "git-lfs"
 brew "gnupg2"
 brew "grep"
 brew "libyaml"
@@ -44,6 +45,9 @@ brew "heroku"
 # GitHub
 brew "hub"
 
+# AWS
+brew "awscli"
+
 # Image manipulation
 brew "imagemagick"
 
@@ -67,6 +71,7 @@ cask "istat-menus"
 cask "little-snitch"
 cask "1password"
 cask "dash"
+cask "grammarly"
 
 # Quicklook
 cask "qlcolorcode"
