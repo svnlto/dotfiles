@@ -38,9 +38,13 @@ brew "kubectl"
 brew "kubernetes-helm"
 brew "wget"
 brew "jq"
+brew "cmake"
 
 # Heroku
 brew "heroku"
+
+# Rails dependencies
+brew "postgresql"
 
 # GitHub
 brew "hub"
