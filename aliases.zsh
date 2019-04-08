@@ -26,3 +26,6 @@ alias pull='git smart-pull'
 
 # TMUX
 alias tmux="tmux -2"
+
+# NVIM
+alias vim="nvim"

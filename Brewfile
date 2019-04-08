@@ -11,6 +11,8 @@ brew "automake"
 brew "autoconf"
 brew "bash" # Bash 4
 brew "coreutils" # Those that come with macOS are outdated
+brew "zlib"
+brew "sqlite"
 brew "git"
 brew "git-lfs"
 brew "gnupg2"
@@ -32,7 +34,7 @@ brew "libyaml"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
-brew "vim"
+brew "neovim"
 brew "watchman"
 brew "kubectl"
 brew "kubernetes-helm"
@@ -76,6 +78,7 @@ cask "little-snitch"
 cask "1password"
 cask "dash"
 cask "grammarly"
+cask 'google-drive-file-stream'
 
 # Quicklook
 cask "qlcolorcode"
@@ -89,10 +92,9 @@ cask "font-hack"
 cask "font-iosevka"
 
 # Mac App Store
+mas "Bear", id: 1091189122
 mas "The Unarchiver", id: 425424353
-mas "WhatsApp", id: 1147396723 
-mas "Bear", id: 1091189122 
-mas "Display Menu", id: 549083868
-mas "Keynote", id: 409183694
 mas "Notability", id: 409183694
+mas "WhatsApp", id: 1147396723
 mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
