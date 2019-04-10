@@ -11,6 +11,7 @@ brew "automake"
 brew "autoconf"
 brew "bash" # Bash 4
 brew "coreutils" # Those that come with macOS are outdated
+brew "ack"
 brew "zlib"
 brew "sqlite"
 brew "git"
