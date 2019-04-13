@@ -54,6 +54,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
+Plug 'fishbullet/deoplete-ruby'
 
 " Go
 Plug 'fatih/vim-go'
@@ -69,6 +70,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-sensible'
 
 " Linters
 Plug 'w0rp/ale'

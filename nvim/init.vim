@@ -15,19 +15,14 @@ syntax on
 set encoding=utf8
 
 set so=10
-set ruler
 set number
 set hidden
 set nowrap
-set autoread
 set showmatch
 set clipboard=unnamed
 
 
 set wildignore=*.o,*~,*.pyc
-
-" set delete behaviour
-set backspace=eol,start,indent
 
 " keyword highlighting
 set iskeyword+=-
@@ -56,7 +51,6 @@ set tm=500
 set ignorecase
 set smartcase
 set hlsearch
-set incsearch
 
 set expandtab
 set smarttab
