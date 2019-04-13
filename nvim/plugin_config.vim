@@ -32,22 +32,6 @@ map nt :NERDTreeToggle<cr>
 map nf :NERDTreeFind<cr>
 let NERDSpaceDelims=1
 
-let g:webdevicons_enable = 0
-let g:webdevicons_enable_nerdtree = 0
-
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '⛌',
-    \ "Unknown"   : "?"
-    \ }
-
 
 """""""""""""""""""""""""""
 " ALE
@@ -80,9 +64,6 @@ let g:ctrlp_custom_ignore = 'tmp$\|\.git$\|\.hg$\|\.svn$\|\.rvm$\|vendor$'
 let g:ctrlp_tabpage_position = 'a'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_files = 0
-
-" vim mapping to search for the current word under the cursor.
-nnoremap <leader>S :Ack <C-R><C-W><CR>
 
 " The Silver Searcher
 if executable('ag')
