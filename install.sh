@@ -21,6 +21,13 @@ chsh -s $(which zsh)
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# Removes nvim from config (if it exists) and symlinks the nvim dir from the .dotfiles
+rm -rf $HOME/.config/nvim
+ln -s $HOME/.dotfiles/nvim/ $HOME/.config/nvim
+
+# Symlink the .gitconfig file to the home directory
+ln -s $HOME/.dotfiles/.gotconfig $HOME/.gitconfig
+
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
 

@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved
 filetype plugin indent on     " required!
 
+runtime macros/matchit.vim
+
 source ~/.config/nvim/plugged.vim
 source ~/.config/nvim/plugin_config.vim
 
@@ -20,12 +22,24 @@ set nowrap
 set autoread
 set showmatch
 set clipboard=unnamed
+
+
 set wildignore=*.o,*~,*.pyc
+
+" set delete behaviour
 set backspace=eol,start,indent
+
+" keyword highlighting
 set iskeyword+=-
+
+" File format detection
 set ffs=unix,dos,mac
+" show status line
 set laststatus=2
+
+" print margin at 80 chars
 set colorcolumn=80
+
 behave mswin
 
 " Turn backup off, since most stuff is in SVN, git etc.
@@ -103,3 +117,8 @@ nmap <Leader><Space>p :lprev<CR>      " previous error/warning
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" arrow keys resize pane
+nnoremap <Left> :vertical resize -1<CR>
+nnoremap <Right> :vertical resize +1<CR>
+nnoremap <Up> :resize -1<CR>
+nnoremap <Down> :resize +1<CR>

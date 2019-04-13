@@ -11,7 +11,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Editing
 Plug 'remko/detectindent'
-Plug 'vim-scripts/matchit.zip'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
@@ -29,6 +28,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs'
 Plug 'garbas/vim-snipmate'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
 

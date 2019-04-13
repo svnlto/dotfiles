@@ -1,0 +1,41 @@
+[user]
+  name = svnlto
+  email = me@svenlito.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = always
+[color "diff-highlight"]
+  oldNormal = "red bold"
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
+[core]
+  autocrlf = input
+  quotepath = false
+  compression = 9
+  preloadindex = true
+  excludesfile = /Users/svenlito/.gitignore_global
+  editor = nvim
+  pager = diff-highlight | less -r
+[web]
+  browser = /Applications/Google Chrome.app
+[merge]
+  verbosity = 5
+[mergetool]
+  keepBackup = true
+[credential]
+  helper = osxkeychain
+[github]
+  user = svnlto
+[push]
+  default = simple
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+
