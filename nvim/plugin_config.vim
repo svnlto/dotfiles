@@ -15,7 +15,7 @@ if !exists('g:airline_symbols')
 endif
 
 let g:airline_symbols.space = "\ua0"
-let g:airline_theme='one'
+let g:airline_theme='onedark'
 
 
 """""""""""""""""""""""""""
@@ -27,10 +27,13 @@ let g:jsx_ext_required = 0
 """""""""""""""""""""""""""
 " NerdTree
 """""""""""""""""""""""""""
-let g:nerdtreechdirmode=2
+let g:nerdtreechdirmode = 2
+let NERDSpaceDelims = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeAutoDeleteBuffer = 1
 map nt :NERDTreeToggle<cr>
 map nf :NERDTreeFind<cr>
-let NERDSpaceDelims=1
 
 
 """""""""""""""""""""""""""
