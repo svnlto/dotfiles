@@ -28,9 +28,6 @@ ln -s $HOME/.dotfiles/nvim/ $HOME/.config/nvim
 # Symlink the .gitconfig file to the home directory
 ln -s $HOME/.dotfiles/.gotconfig $HOME/.gitconfig
 
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
-
 # Install asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 git checkout -b v0.7.0

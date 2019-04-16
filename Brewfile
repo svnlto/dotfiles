@@ -23,7 +23,6 @@ brew "readline"
 brew "libxslt"
 brew "libtool"
 brew "unixodbc"
-brew "mackup"
 brew "mas"
 brew "pkg-config" # https://github.com/driesvints/dotfiles/issues/20
 brew "trash"

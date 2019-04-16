@@ -7,7 +7,6 @@ alias c="clear"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
-alias projects="cd $HOME/Projects"
 alias sites="cd /Volumes/GoogleDrive/My\ Drive/Sites"
 
 # JS
