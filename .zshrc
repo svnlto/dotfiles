@@ -8,43 +8,11 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
-if [[ ! -d ~/.zplug ]]; then
-  git clone https://github.com/b4b4r07/zplug ~/.zplug
+if [[ ! -f /usr/local/bin/antibody ]]; then
+  curl -sL git.io/antibody | sh -s
 fi
 
-source ~/.zplug/init.zsh
-
-zplug "zsh-users/zsh-completions", use:src
-zplug "zsh-users/zsh-autosuggestions", defer:3
-zplug "zsh-users/zsh-syntax-highlighting", defer:3
-zplug "zsh-users/zsh-history-substring-search", defer:3
-zplug "kiurchv/asdf.plugin.zsh", defer:2
-
-zplug "robbyrussell/oh-my-zsh", use:"lib/*.zsh", defer:0
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/github", from:oh-my-zsh
-zplug "plugins/npm", from:oh-my-zsh
-zplug "plugins/docker", from:oh-my-zsh
-zplug "plugins/rsync", from:oh-my-zsh
-zplug "plugins/command-not-found", from:oh-my-zsh
-
-zplug "lukechilds/zsh-nvm", from:github
-zplug "b4b4r07/emoji-cli", from:github
-
-# Theme!
-zplug "denysdovhan/spaceship-zsh-theme", use:spaceship.zsh, from:github, as:theme
-
-zplug load
-
-# Actually install plugins, prompt user input
-if ! zplug check --verbose; then
-  printf "Install zplug plugins? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-
-EMOJI_CLI_KEYBIND=^e
+antibody bundle < ~/.zsh-plugins.txt > ~/.zsh-plugins.sh
 
 # PROMPT
 SPACESHIP_CHAR_SYMBOL='➔ '
@@ -97,7 +65,7 @@ SPACESHIP_PROMPT_ORDER=(
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
-# aliases 
+# aliases
 source $ZSH_CUSTOM/aliases.zsh
 
 # path
