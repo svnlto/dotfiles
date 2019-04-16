@@ -22,8 +22,9 @@ alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
 # Git
 alias git-prune='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
-alias merge='git smart-merge'
-alias pull='git smart-pull'
+alias gsm='git smart-merge'
+alias gsp='git smart-pull'
+alias gst='git status'
 
 # TMUX
 alias tmux="tmux -2"
