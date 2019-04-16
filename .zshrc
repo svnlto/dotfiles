@@ -12,7 +12,7 @@ if [[ ! -f /usr/local/bin/antibody ]]; then
   curl -sL git.io/antibody | sh -s
 fi
 
-antibody bundle < ~/.zsh-plugins.txt > ~/.zsh-plugins.sh
+antibody bundle < $DOTFILES/.zsh-plugins.txt > ~/.zsh-plugins.sh
 
 # PROMPT
 SPACESHIP_CHAR_SYMBOL='➔ '
