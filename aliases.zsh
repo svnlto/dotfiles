@@ -8,6 +8,7 @@ alias c="clear"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias projects="cd $HOME/Projects"
+alias sites="cd /Volumes/GoogleDrive/My\ Drive/Sites"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"

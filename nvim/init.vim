@@ -1,8 +1,6 @@
 set nocompatible              " be iMproved
 filetype plugin indent on     " required!
 
-runtime macros/matchit.vim
-
 source ~/.config/nvim/plugged.vim
 source ~/.config/nvim/plugin_config.vim
 
