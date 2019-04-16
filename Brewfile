@@ -42,6 +42,7 @@ brew "kubernetes-helm"
 brew "wget"
 brew "jq"
 brew "cmake"
+brew "diff-so-fancy"
 
 # Heroku
 brew "heroku"

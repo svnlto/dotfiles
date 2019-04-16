@@ -1,16 +1,20 @@
 [user]
   name = svnlto
   email = me@svenlito.com
-[color]
-  diff = auto
-  status = auto
-  branch = auto
-  ui = always
 [color "diff-highlight"]
-  oldNormal = "red bold"
-  oldHighlight = "red bold 52"
-  newNormal = "green bold"
-  newHighlight = "green bold 22"
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color]
+  ui = always
 [core]
   autocrlf = input
   quotepath = false
@@ -18,7 +22,7 @@
   preloadindex = true
   excludesfile = /Users/svenlito/.gitignore_global
   editor = nvim
-  pager = diff-highlight | less -r
+  pager = diff-so-fancy | less --tabs=2 -RFX
 [web]
   browser = /Applications/Google Chrome.app
 [merge]
