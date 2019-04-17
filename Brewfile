@@ -69,7 +69,7 @@ cask "spotify"
 cask "spectacle"
 cask "flux"
 cask "iterm2"
-cask "tower2"
+cask "github"
 cask "visual-studio-code"
 cask "virtualbox"
 cask "google-cloud-sdk"
@@ -79,7 +79,8 @@ cask "little-snitch"
 cask "1password"
 cask "dash"
 cask "grammarly"
-cask 'google-drive-file-stream'
+cask "google-drive-file-stream"
+cask "insomnia"
 
 # Quicklook
 cask "qlcolorcode"
