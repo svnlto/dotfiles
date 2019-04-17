@@ -111,8 +111,3 @@ nmap <Leader><Space>p :lprev<CR>      " previous error/warning
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
-" arrow keys resize pane
-nnoremap <Left> :vertical resize -1<CR>
-nnoremap <Right> :vertical resize +1<CR>
-nnoremap <Up> :resize -1<CR>
-nnoremap <Down> :resize +1<CR>
