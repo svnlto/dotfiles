@@ -94,11 +94,11 @@ map <Leader>bn :MBEbn <cr>
 map <Leader>bp :MBEbp <cr>
 map <Leader>bt :MBEToggle <cr>
 
-
 autocmd VimEnter * call StartUp()
 autocmd VimEnter * wincmd p
 
 function! StartUp()
+  execute 'Startify'
   execute 'NERDTree' getcwd()
 endfunction
 

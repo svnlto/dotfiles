@@ -24,6 +24,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'djoshea/vim-autoread'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-startify'
 
 " Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
