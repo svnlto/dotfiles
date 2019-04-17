@@ -2,8 +2,8 @@
 " deoplete
 """""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
-
-
+" <TAB>: completion.
+inoremap <silent><expr><CR> pumvisible() ? deoplete#mappings#close_popup() : "\<CR>"
 """""""""""""""""""""""""""
 " Airline
 """""""""""""""""""""""""""
