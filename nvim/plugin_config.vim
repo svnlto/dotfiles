@@ -3,33 +3,8 @@
 """""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
 " <TAB>: completion.
-inoremap <silent><expr><CR> pumvisible() ? deoplete#mappings#close_popup() : "\<CR>"
-
-"""""""""""""""""""""""""""""""""
-" denite
-""""""""""""""""""""""""""""""""
-call denite#custom#map('insert', "<Up>", '<denite:move_to_previous_line>', 'noremap')
-call denite#custom#map('insert', "<Down>", '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<c-u>', '<denite:scroll_up>' , 'noremap')
-call denite#custom#map('insert', '<c-d>', '<denite:scroll_down>' , 'noremap')
-call denite#custom#option('_', {
-  \ 'prompt': '⟩',
-  \ 'winheight': 10,
-  \ 'auto_resize': 1,
-  \})
-let s:menus = {}
-let s:menus.neovim = {
-  \ 'description': 'Tools & Keybindings'
-\ }
-let s:menus.neovim.command_candidates = []
-let s:menus.tmux = {
-  \ 'description': 'Keybindings'
-\ }
-let s:menus.tmux.command_candidates = []
-let s:menus.git = {
-  \ 'description': 'Git power menu <Leader>g'
-\ }
-let s:menus.git.command_candidates = []
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 """""""""""""""""""""""""""""""
 " Airline
@@ -80,10 +55,8 @@ let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#jsx_bracket_same_line = 'true'
 let g:prettier#config#arrow_parens = 'always'
 let g:prettier#config#trailing_comma = 'none'
-let g:prettier#config#parser = 'babylon'
 let g:prettier#config#config_precedence = 'prefer-file'
 let g:prettier#config#prose_wrap = 'preserve'
-
 
 """""""""""""""""""""""""""
 " CtrlP + ag
@@ -118,10 +91,3 @@ nnoremap <Left> :vertical resize -1<CR>
 nnoremap <Right> :vertical resize +1<CR>
 nnoremap <Up> :resize -1<CR>
 nnoremap <Down> :resize +1<CR>
-let s:menus.neovim.command_candidates += [['Resize pane: Arrow Keys', '']]
-
-" vim-fugitive
-let s:menus.neovim.command_candidates += [['Git menu: <Leader>g', 'Denite menu:git']]
-let s:menus.git.command_candidates += [['Status `g status`', 'Git status']]
-let s:menus.git.command_candidates += [['Add Patch `g add -p`', 'Git add -p']]
-let s:menus.git.command_candidates += [['Commit `g commit`', 'Git commit']]

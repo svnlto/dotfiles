@@ -81,6 +81,7 @@ cask "dash"
 cask "grammarly"
 cask "google-drive-file-stream"
 cask "insomnia"
+cask "monodraw"
 
 # Quicklook
 cask "qlcolorcode"

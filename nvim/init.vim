@@ -16,11 +16,11 @@ set encoding=utf8
 
 set so=10
 set number
+set relativenumber
 set hidden
 set nowrap
 set showmatch
 set clipboard=unnamed
-
 
 set wildignore=*.o,*~,*.pyc
 
@@ -29,6 +29,7 @@ set iskeyword+=-
 
 " File format detection
 set ffs=unix,dos,mac
+
 " show status line
 set laststatus=2
 
@@ -64,15 +65,6 @@ set t_Co=256
 set background=dark
 colorscheme one
 
-noremap ; :
-noremap 0 ^
-noremap <space> $
-noremap Y y$
-
-" Treat long lines as break lines (useful when moving around in them)
-noremap j gj
-noremap k gk
-
 " Smart way to move between windows
 noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
@@ -87,8 +79,7 @@ nnoremap <leader>hs :noh<CR>
 " edit and reload vimrc
 nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
-
-map <leader>pp :setlocal paste!<cr>
+nnoremap <leader>pp :setlocal paste!<cr>
 
 map <Leader>bn :MBEbn <cr>
 map <Leader>bp :MBEbp <cr>
@@ -101,12 +92,6 @@ function! StartUp()
   execute 'Startify'
   execute 'NERDTree' getcwd()
 endfunction
-
-nmap <Leader><Space>o :lopen<CR>      " open location window
-nmap <Leader><Space>c :lclose<CR>     " close location window
-nmap <Leader><Space>, :ll<CR>         " go to current error/warning
-nmap <Leader><Space>n :lnext<CR>      " next error/warning
-nmap <Leader><Space>p :lprev<CR>      " previous error/warning
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e

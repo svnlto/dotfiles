@@ -14,7 +14,11 @@ Plug 'remko/detectindent'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
+
 Plug 'vim-scripts/matchparenpp'
+" replace the above with this "
+" https://github.com/itchyny/vim-parenmatch "
+
 
 " File explore
 Plug 'scrooloose/nerdcommenter'
@@ -25,7 +29,6 @@ Plug 'djoshea/vim-autoread'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
-Plug 'Shougo/denite.nvim'
 
 " Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -78,7 +81,7 @@ Plug 'tpope/vim-sensible'
 " Linters
 Plug 'w0rp/ale'
 Plug 'prettier/vim-prettier', { 'do': 'npm install',
-      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'ruby'] }
 
 " Colorscheme
 Plug 'rakr/vim-one'
