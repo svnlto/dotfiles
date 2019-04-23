@@ -1,5 +1,4 @@
 set nocompatible              " be iMproved
-filetype plugin indent on     " required!
 
 source ~/.config/nvim/plugged.vim
 source ~/.config/nvim/plugin_config.vim
@@ -9,10 +8,6 @@ if (has("termguicolors"))
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
-
-syntax on
-
-set encoding=utf8
 
 set so=10
 set number
@@ -73,7 +68,7 @@ noremap <C-l> <C-W>l
 
 let mapleader = ","
 
-nnoremap <leader>l :set list!<CR>
+nnoremap <leader>ls :set list!<CR>
 nnoremap <leader>hs :noh<CR>
 
 " edit and reload vimrc
@@ -84,6 +79,8 @@ nnoremap <leader>pp :setlocal paste!<cr>
 map <Leader>bn :MBEbn <cr>
 map <Leader>bp :MBEbp <cr>
 map <Leader>bt :MBEToggle <cr>
+
+nnoremap <Leader>a :Ack<space>
 
 autocmd VimEnter * call StartUp()
 autocmd VimEnter * wincmd p

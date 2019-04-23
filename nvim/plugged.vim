@@ -29,6 +29,7 @@ Plug 'djoshea/vim-autoread'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
+Plug 'valloric/listtoggle'
 
 " Auto complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
