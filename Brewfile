@@ -42,6 +42,8 @@ brew "wget"
 brew "jq"
 brew "cmake"
 brew "diff-so-fancy"
+brew "postman"
+brew "macdown"
 
 # Heroku
 brew "heroku"
