@@ -62,6 +62,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
 Plug 'fishbullet/deoplete-ruby'
+Plug 'ngmy/vim-rubocop'
 
 " Go
 Plug 'fatih/vim-go'
