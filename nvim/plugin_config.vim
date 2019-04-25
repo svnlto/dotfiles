@@ -39,13 +39,30 @@ map nf :NERDTreeFind<cr>
 " ALE
 """""""""""""""""""""""""""
 let g:ale_linters = {
-\  'javascript': ['eslint'],
-\  'elixir': ['elixir-ls']
-}
+  \   'elixir': ['credo', 'mix', 'elixir-ls'],
+  \   'erb': ['erb', 'erubis'],
+  \   'html': [],
+  \   'javascript': ['eslint', 'tsserver'],
+  \   'json': ['prettier'],
+  \   'ruby': ['rubocop', 'ruby', 'rails_best_practices', 'reek'],
+  \   'scss': ['prettier'],
+  \   'typescript': ['tslint', 'typecheck', 'tsserver'],
+  \   'vim': ['vint'],
+  \   'vue': ['vls', 'eslint'],
+  \}
 
 let g:ale_fixers = {
-\  'elixir': ['mix_format'],
-\}
+  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+  \   'elixir': ['mix_format'],
+  \   'javascript': ['prettier', 'eslint'],
+  \   'json': ['prettier'],
+  \   'markdown': ['prettier'],
+  \   'ruby': ['prettier', 'rubocop'],
+  \   'typescript': ['prettier', 'tslint'],
+  \   'vue': ['prettier'],
+  \   'yaml': ['prettier'],
+  \   'html': ['prettier']
+  \}
 
 let g:ale_elixir_elixir_ls_release = '~/.bin/elixir-ls/release/'
 
