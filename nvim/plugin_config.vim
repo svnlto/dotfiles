@@ -38,6 +38,12 @@ map nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""
 " ALE
 """""""""""""""""""""""""""
+let g:airline#extensions#ale#enabled = 1
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_sign_column_always = 0
 let g:ale_linters = {
   \   'elixir': ['credo', 'mix', 'elixir-ls'],
   \   'erb': ['erb', 'erubis'],
