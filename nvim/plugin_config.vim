@@ -1,7 +1,3 @@
-"""""""""""""""""""""""""""""""""
-" deoplete
-"""""""""""""""""""""""""""""""""
-let g:deoplete#enable_at_startup = 1
 " <TAB>: completion.
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -17,8 +13,9 @@ if !exists('g:airline_symbols')
 endif
 
 let g:airline_symbols.space = "\ua0"
-let g:airline_theme='onedark'
-
+let g:airline_theme ='onedark'
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 """""""""""""""""""""""""""
 " JavaScript
@@ -41,8 +38,16 @@ map nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""
 " ALE
 """""""""""""""""""""""""""
-let g:ale_linters = { 'javascript': ['eslint'] }
+let g:ale_linters = {
+\  'javascript': ['eslint'],
+\  'elixir': ['elixir-ls']
+}
 
+let g:ale_fixers = {
+\  'elixir': ['mix_format'],
+\}
+
+let g:ale_elixir_elixir_ls_release = '~/.bin/elixir-ls/release/'
 
 """""""""""""""""""""""""""
 " vim prettier

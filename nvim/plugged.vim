@@ -32,14 +32,12 @@ Plug 'mhinz/vim-startify'
 Plug 'valloric/listtoggle'
 
 " Auto complete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'carlitux/deoplete-ternjs'
 Plug 'garbas/vim-snipmate'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 " Syntax Highlight - Formatting
 Plug 'lilydjwg/colorizer'
 Plug 'sheerun/vim-polyglot'
@@ -61,7 +59,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-bundler'
 Plug 'vim-ruby/vim-ruby'
-Plug 'fishbullet/deoplete-ruby'
 Plug 'ngmy/vim-rubocop'
 
 " Go
