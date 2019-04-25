@@ -1,4 +1,4 @@
-vim/plugged/
+nvim/plugged/
 node_modules/
 .netrwhist
 .DS_Store
