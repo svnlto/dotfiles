@@ -4,3 +4,5 @@ rubocop
 cmake
 git-smart
 neovim
+solargraph
+reek
