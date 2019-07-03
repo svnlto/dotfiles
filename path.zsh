@@ -5,6 +5,8 @@
 
 # Local bin directories before anything else
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 
 # Customize to your needs...
 export PATH=$PATH:~/.bin

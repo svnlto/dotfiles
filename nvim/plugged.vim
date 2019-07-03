@@ -54,16 +54,6 @@ Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'posva/vim-vue'
 
-" Ruby
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-bundler'
-Plug 'vim-ruby/vim-ruby'
-Plug 'ngmy/vim-rubocop'
-
-" Go
-Plug 'fatih/vim-go'
-
 " Elixir
 Plug 'slashmili/alchemist.vim'
 Plug 'elixir-lang/vim-elixir'
