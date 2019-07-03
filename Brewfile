@@ -86,6 +86,7 @@ cask "notion"
 cask "postman"
 cask "gray"
 cask "sourcetree"
+cask "cleanmymac"
 
 # Quicklook
 cask "qlcolorcode"
