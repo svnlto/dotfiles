@@ -82,8 +82,11 @@ cask "1password"
 cask "dash"
 cask "grammarly"
 cask "google-drive-file-stream"
-cask "insomnia"
 cask "monodraw"
+cask "notion"
+cask "postman"
+cask "gray"
+cask "sourcetree"
 
 # Quicklook
 cask "qlcolorcode"
