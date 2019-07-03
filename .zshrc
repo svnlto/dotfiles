@@ -92,3 +92,5 @@ ulimit -n 4096
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export NODE_ENV="development"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
