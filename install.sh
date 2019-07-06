@@ -41,16 +41,16 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git;
 asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git;
 asdf plugin-add python https://github.com/danhper/asdf-python.git
 
+# Configures ASDF tool and default versions
+ln -sf $HOME/.dotfiles/.tool-versions $HOME/.tool-versions
+ln -sf $HOME/.dotfiles/.default-gems $HOME/.default-gems
+ln -sf $HOME/.dotfiles/.default-npm-packages $HOME/.default-npm-packages
+
 # Install dependencies
 asdf install
 
 number_of_cores=$(sysctl -n hw.ncpu)
 $HOME/.asdf/bin/private/asdf-exec ruby bin/bundle config --global jobs $((number_of_cores - 1))
-
-# Configures ASDF tool and default versions
-ln -sf $HOME/.dotfiles/.tool-versions $HOME/.tool-versions
-ln -sf $HOME/.dotfiles/.default-gems $HOME/.default-gems
-ln -sf $HOME/.dotfiles/.default-npm-packages $HOME/.default-npm-packages
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
