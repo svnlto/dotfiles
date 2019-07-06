@@ -78,4 +78,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'NLKNguyen/papercolor-theme'
 
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
