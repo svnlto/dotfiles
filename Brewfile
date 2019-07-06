@@ -46,9 +46,6 @@ brew "diff-so-fancy"
 # Heroku
 brew "heroku"
 
-# Rails dependencies
-brew "postgresql"
-
 # GitHub
 brew "hub"
 
