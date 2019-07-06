@@ -93,8 +93,10 @@ cask "quicklook-csv"
 cask "qlstephen"
 
 # Fonts
-cask "font-hack"
+cask "font-hack-nerd-font"
 cask "font-iosevka"
+cask "font-fira-code"
+cask "font-hasklig"
 
 # Mac App Store
 mas "Bear", id: 1091189122
