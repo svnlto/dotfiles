@@ -1,7 +1,7 @@
 golang 1.12
 nodejs 11.12.0
 ruby 2.6.2
-elixir 1.8.0
-erlang 20.1
+elixir 1.9
+erlang 21.1
 terraform 0.11.13
 python 3.7.2
