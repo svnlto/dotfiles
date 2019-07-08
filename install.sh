@@ -28,6 +28,11 @@ ln -s $HOME/.dotfiles/nvim/ $HOME/.config/nvim
 # Symlink the .gitconfig file to the home directory
 ln -s $HOME/.dotfiles/.gotconfig $HOME/.gitconfig
 
+# Configures ASDF tool and default versions
+ln -sf $HOME/.dotfiles/.tool-versions $HOME/.tool-versions
+ln -sf $HOME/.dotfiles/.default-gems $HOME/.default-gems
+ln -sf $HOME/.dotfiles/.default-npm-packages $HOME/.default-npm-packages
+
 # Install asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 git checkout -b v0.7.0
