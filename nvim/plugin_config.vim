@@ -44,7 +44,7 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_column_always = 0
 let g:ale_linters = {
-  \   'elixir': ['credo', 'mix', 'elixir-ls'],
+  \   'elixir': ['credo', 'dialyxir', 'mix', 'elixir-ls'],
   \   'erb': ['erb', 'erubis'],
   \   'html': [],
   \   'javascript': ['eslint', 'tsserver'],
