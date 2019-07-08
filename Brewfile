@@ -42,6 +42,7 @@ brew "wget"
 brew "jq"
 brew "cmake"
 brew "diff-so-fancy"
+brew "wxmac"
 
 # Heroku
 brew "heroku"
