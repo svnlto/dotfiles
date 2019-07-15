@@ -20,3 +20,12 @@ export PKG_CONFIG_PATH="${PKG_CONFIG_PATH} /usr/local/opt/zlib/lib/pkgconfig"
 
 # For erlang installations, removes java dependency
 export KERL_CONFIGURE_OPTIONS="--disable-debug --without-javac"
+
+# iex history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# default node.js environment
+export NODE_ENV="development"
+
+# set history file for hh
+export HISTFILE=~/.zsh_history

@@ -37,19 +37,19 @@ map nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""
 " ALE
 """""""""""""""""""""""""""
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
 let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_enter = 1
-let g:ale_lint_on_filetype_changed = 0
+let g:ale_lint_on_filetype_changed = 1
 let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_sign_column_always = 0
+let g:ale_lint_on_text_changed = 1
+let g:ale_sign_column_always = 1
 let g:ale_linters = {
-  \   'elixir': ['credo', 'dialyxir', 'mix', 'elixir-ls'],
-  \   'erb': ['erb', 'erubis'],
+  \   'elixir': ['credo', 'dialyxir', 'elixir-ls'],
   \   'html': [],
   \   'javascript': ['eslint', 'tsserver'],
   \   'json': ['prettier'],
-  \   'ruby': ['rubocop', 'ruby', 'rails_best_practices', 'reek'],
   \   'scss': ['prettier'],
   \   'typescript': ['tslint', 'typecheck', 'tsserver'],
   \   'vim': ['vint'],
@@ -62,7 +62,6 @@ let g:ale_fixers = {
   \   'javascript': ['prettier', 'eslint'],
   \   'json': ['prettier'],
   \   'markdown': ['prettier'],
-  \   'ruby': ['prettier', 'rubocop'],
   \   'typescript': ['prettier', 'tslint'],
   \   'vue': ['prettier'],
   \   'yaml': ['prettier'],
@@ -70,6 +69,13 @@ let g:ale_fixers = {
   \}
 
 let g:ale_elixir_elixir_ls_release = '~/.bin/elixir-ls/release/'
+
+noremap <Leader>ad :ALEGoToDefinition<CR>
+nnoremap <leader>af :ALEFix<cr>
+noremap <Leader>ar :ALEFindReferences<CR>
+"Move between linting errors
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>
 
 """""""""""""""""""""""""""
 " vim prettier

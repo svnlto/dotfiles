@@ -82,16 +82,5 @@ source $ZSH_CUSTOM/aliases.zsh
 # path
 source $ZSH_CUSTOM/path.zsh
 
-# nvim
-export EDITOR=nvim
-export REACT_EDITOR=nvim
-
-ulimit -n 4096
-
-# iex history
-export ERL_AFLAGS="-kernel shell_history enabled"
-
-export NODE_ENV="development"
-
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
