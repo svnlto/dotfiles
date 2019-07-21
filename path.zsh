@@ -27,9 +27,6 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # default node.js environment
 export NODE_ENV="development"
 
-# set history file for hh
-export HISTFILE=~/.zsh_history
-
 # set up hh colours
 export HSTR_CONFIG=hicolor,case-sensitive
 export HSTR_CONFIG=keywords-matching,hicolor,debug
