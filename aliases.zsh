@@ -30,3 +30,6 @@ alias tmux="tmux -2"
 
 # NVIM
 alias vim="nvim"
+
+# mount hh on ctrl-r
+bindkey -s "\C-r" "\eqhstr --\n"
