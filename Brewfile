@@ -59,6 +59,7 @@ brew "imagemagick"
 
 # Apps
 cask "alfred"
+cask "arq"
 cask "google-chrome"
 cask "google-chrome-canary"
 cask "docker"
