@@ -7,7 +7,7 @@ endif
 call plug#begin('~/.config/nvim/plugged')
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle', 'commit': '8d005db' }
 
 " Editing
 Plug 'remko/detectindent'
@@ -22,6 +22,7 @@ Plug 'vim-scripts/matchparenpp'
 
 " File explore
 Plug 'scrooloose/nerdcommenter'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
