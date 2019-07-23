@@ -13,11 +13,15 @@ alias sites="cd /Volumes/GoogleDrive/My\ Drive/Sites"
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 
 # Docker
+alias d='docker'
 #alias dstop="docker stop $(docker ps -a -q)"
 #alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
 #alias dpurgeimages="docker rmi $(docker images -q)"
 #dbuild() { docker build -t=$1 .; }
 #dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+
+# Kubernetes
+alias k='kubectl'
 
 # Git
 alias git-prune='git branch --merged | egrep -v "(^\*|master|develop)" | xargs git branch -d'
