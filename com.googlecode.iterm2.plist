@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowClipboardAccess</key>
-	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -372,16 +370,12 @@
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.90000000000000002</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.90000000000000002</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.90000000000000002</real>
+				<real>1</real>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
@@ -466,8 +460,8 @@
 				<key>Red Component</key>
 				<real>0.11765811592340469</real>
 			</dict>
-			<key>Background Image Is Tiled</key>
-			<false/>
+			<key>Background Image Location</key>
+			<string></string>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -481,12 +475,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
-			<key>Blend</key>
-			<real>0.11384715544871794</real>
-			<key>Blink Allowed</key>
-			<true/>
 			<key>Blinking Cursor</key>
-			<false/>
+			<true/>
 			<key>Blur</key>
 			<false/>
 			<key>Bold Color</key>
@@ -511,11 +501,11 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.879669189453125</real>
+				<real>0.81903076171875</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.078887939453125</real>
+				<real>0.11865234375</real>
 				<key>Red Component</key>
 				<real>0.7810397744178772</real>
 			</dict>
@@ -534,19 +524,13 @@
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.90000000000000002</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.90000000000000002</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.90000000000000002</real>
+				<real>1</real>
 			</dict>
-			<key>Cursor Type</key>
-			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -573,7 +557,7 @@
 				<real>0.80000000000000004</real>
 			</dict>
 			<key>Guid</key>
-			<string>0CEBD0DF-1B1D-49BE-B316-E04915D9BDC5</string>
+			<string>7F1D8D0A-4177-4D23-8557-655A4C431774</string>
 			<key>Horizontal Spacing</key>
 			<real>0.97999999999999998</real>
 			<key>Idle Code</key>
@@ -890,9 +874,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>Hack-Regular 13</string>
-			<key>Only The Default BG Color Uses Transparency</key>
-			<false/>
+			<string>HackNerdFontComplete-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -907,16 +889,12 @@
 			<integer>1000</integer>
 			<key>Selected Text Color</key>
 			<dict>
-				<key>Alpha Component</key>
-				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.69999999999999996</real>
-				<key>Color Space</key>
-				<string>sRGB</string>
+				<real>1</real>
 				<key>Green Component</key>
-				<real>0.69999999999999996</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.69999999999999996</real>
+				<real>1</real>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
@@ -955,25 +933,17 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
-			<key>Thin Strokes</key>
-			<integer>3</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
-			<false/>
+			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
-			<key>Use Cursor Guide</key>
-			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
-			<key>Use Tab Color</key>
-			<false/>
-			<key>Use Underline Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
 			<real>1.0800000000000001</real>
@@ -2344,8 +2314,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>~/.dotfiles</string>
-	<key>PromptOnQuit</key>
-	<false/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
