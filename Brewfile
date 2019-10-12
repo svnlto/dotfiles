@@ -45,9 +45,6 @@ brew "diff-so-fancy"
 brew "wxmac"
 brew "hh"
 
-# Heroku
-brew "heroku"
-
 # GitHub
 brew "hub"
 
@@ -102,7 +99,6 @@ cask "font-fira-code"
 cask "font-hasklig"
 
 # Mac App Store
-mas "Bear", id: 1091189122
 mas "The Unarchiver", id: 425424353
 mas "Notability", id: 409183694
 mas "WhatsApp", id: 1147396723

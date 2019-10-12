@@ -86,10 +86,6 @@ autocmd VimEnter * call StartUp()
 autocmd VimEnter * wincmd p
 
 function! StartUp()
-  execute 'Startify'
   execute 'NERDTree' getcwd()
 endfunction
-
-" remove trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
 

@@ -70,9 +70,9 @@ let g:ale_fixers = {
 
 let g:ale_elixir_elixir_ls_release = '~/.bin/elixir-ls/release/'
 
-noremap <Leader>ad :ALEGoToDefinition<CR>
-nnoremap <leader>af :ALEFix<cr>
-noremap <Leader>ar :ALEFindReferences<CR>
+noremap <Leader>aad :ALEGoToDefinition<CR>
+nnoremap <leader>aaf :ALEFix<cr>
+noremap <Leader>aar :ALEFindReferences<CR>
 "Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>

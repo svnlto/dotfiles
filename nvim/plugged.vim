@@ -28,8 +28,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'djoshea/vim-autoread'
 Plug 'fholgado/minibufexpl.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-startify'
 Plug 'valloric/listtoggle'
 
 " Auto complete
@@ -39,6 +37,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+
 " Syntax Highlight - Formatting
 Plug 'lilydjwg/colorizer'
 Plug 'sheerun/vim-polyglot'
