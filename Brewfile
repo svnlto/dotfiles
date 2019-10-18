@@ -1,7 +1,7 @@
 # Taps
 tap "homebrew/bundle"
 tap "caskroom/cask"
-tap "caskroom/fonts"
+tap "homebrew/cask-fonts"
 tap "caskroom/versions"
 tap "homebrew/services"
 tap "heroku/brew"
