@@ -1,8 +1,7 @@
 # Taps
 tap "homebrew/bundle"
-tap "homebrew/cask-cask"
+tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/versions"
 tap "homebrew/services"
 tap "heroku/brew"
 
