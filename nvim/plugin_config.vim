@@ -39,7 +39,6 @@ map nf :NERDTreeFind<cr>
 """""""""""""""""""""""""""
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
-let g:airline#extensions#ale#enabled = 1
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_filetype_changed = 1
 let g:ale_lint_on_save = 1
@@ -48,18 +47,19 @@ let g:ale_sign_column_always = 1
 let g:ale_linters = {
   \   'elixir': ['credo', 'dialyxir', 'elixir-ls'],
   \   'html': [],
-  \   'javascript': ['eslint', 'tsserver'],
+  \   'javascript': ['prettier', 'tsserver'],
   \   'json': ['prettier'],
   \   'scss': ['prettier'],
   \   'typescript': ['tslint', 'typecheck', 'tsserver'],
   \   'vim': ['vint'],
   \   'vue': ['vls', 'eslint'],
+  \   'sh': ['shellcheck']
   \}
 
 let g:ale_fixers = {
   \   '*': ['remove_trailing_lines', 'trim_whitespace'],
   \   'elixir': ['mix_format'],
-  \   'javascript': ['prettier', 'eslint'],
+  \   'javascript': ['prettier', 'prettier-eslint'],
   \   'json': ['prettier'],
   \   'markdown': ['prettier'],
   \   'typescript': ['prettier', 'tslint'],
@@ -67,6 +67,11 @@ let g:ale_fixers = {
   \   'yaml': ['prettier'],
   \   'html': ['prettier']
   \}
+
+let g:ale_sh_shell_default_shell = 'zsh'
+let g:ale_sh_shellcheck_exclusions = ''
+let g:ale_sh_shellcheck_executable = 'shellcheck'
+let g:ale_sh_shellcheck_options = ''
 
 let g:ale_elixir_elixir_ls_release = '~/.bin/elixir-ls/release/'
 

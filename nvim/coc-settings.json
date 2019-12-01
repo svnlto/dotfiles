@@ -20,6 +20,8 @@
   "coc.source.ultisnips.priority": 2,
   "coc.source.word.priority": 21,
 
+  "eslint.enable": true,
+
   "suggest.detailMaxLength": 30,
   "suggest.minTriggerInputLength": 2,
   "suggest.completionItemKindLabels": {
