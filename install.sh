@@ -25,11 +25,12 @@ ln -s "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 rm -rf "$HOME/.config/nvim"
 ln -s "$HOME/.dotfiles/nvim/" "$HOME/.config/nvim"
 
-# Symlink the .gitconfig file to the home directory
-ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
-
 # Symlink the ssh config file to the home directory
 ln -s "$HOME/.dotfiles/.ssh/" "$HOME/.ssh"
+
+# Symlink the .gitconfig file to the home directory
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
 
 # Configures ASDF tool and default versions
 ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"

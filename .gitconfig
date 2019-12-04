@@ -30,8 +30,6 @@
   keepBackup = true
 [credential]
   helper = osxkeychain
-[github]
-  user = svnlto
 [push]
   default = simple
 [filter "media"]
