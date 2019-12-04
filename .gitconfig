@@ -1,5 +1,6 @@
 [user]
-	name = svenlito
+	name = Sven Lito
+	email = me@svenlito.com
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
