@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "heroku/brew"
+tap "domt4/autoupdate"
 
 # Binaries
 brew "automake"
@@ -37,12 +38,13 @@ brew "neovim"
 brew "watchman"
 brew "kubectl"
 brew "kubernetes-helm"
-brew "wget"
 brew "jq"
 brew "cmake"
 brew "diff-so-fancy"
 brew "wxmac"
 brew "hh"
+brew "asdf"
+brew "httpie"
 
 # GitHub
 brew "hub"
@@ -57,7 +59,6 @@ brew "imagemagick"
 cask "alfred"
 cask "arq"
 cask "google-chrome"
-cask "google-chrome-canary"
 cask "docker"
 cask "skype"
 cask "slack"
@@ -67,9 +68,7 @@ cask "flux"
 cask "iterm2"
 cask "github"
 cask "visual-studio-code"
-cask "virtualbox"
 cask "google-cloud-sdk"
-cask "minikube"
 cask "istat-menus"
 cask "little-snitch"
 cask "1password"
@@ -100,6 +99,5 @@ cask "font-hasklig"
 # Mac App Store
 mas "The Unarchiver", id: 425424353
 mas "Notability", id: 409183694
-mas "WhatsApp", id: 1147396723
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
