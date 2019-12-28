@@ -7,6 +7,8 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# Where to find the zsh history 
+export HISTFILE=${HOME}/.zsh_history
 
 # Customize to your needs...
 export PATH=$PATH:~/.bin
@@ -30,7 +32,4 @@ export NODE_ENV="development"
 # set up hh colours
 export HSTR_CONFIG=hicolor,case-sensitive
 export HSTR_CONFIG=keywords-matching,hicolor,debug
-
-
-export HISTFILE=~/.zsh_history
 

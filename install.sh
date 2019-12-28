@@ -28,18 +28,28 @@ ln -s "$HOME/.dotfiles/nvim/" "$HOME/.config/nvim"
 # Symlink the ssh config file to the home directory
 ln -s "$HOME/.dotfiles/.ssh/" "$HOME/.ssh"
 
-# Symlink the .gitconfig file to the home directory
-ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
-ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
+# Symlink the git config file to the home directory
+ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
+ln -s "$HOME/.dotfiles/.gitignore_global" "$HOME/.gitignore_global"
 
 # Configures ASDF tool and default versions
 ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"
 ln -sf "$HOME/.dotfiles/.default-gems" "$HOME/.default-gems"
 ln -sf "$HOME/.dotfiles/.default-npm-packages" "$HOME/.default-npm-packages"
 
-# Install asdf
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-git checkout -b v0.7.0
+# Symlink tmux config file to the home directory
+ln -s "$HOME/.dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+
+# Symlink global iex configuration
+ln -s "$HOME/.dotfiles/.iex.exs" "$HOME/.iex.exs"
+
+# Install tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Configures ASDF tool and default versions
+ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"
+ln -sf "$HOME/.dotfiles/.default-gems" "$HOME/.default-gems"
+ln -sf "$HOME/.dotfiles/.default-npm-packages" "$HOME/.default-npm-packages"
 
 # Add ASDF plugins
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git;
@@ -50,22 +60,11 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git;
 asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git;
 asdf plugin-add python https://github.com/danhper/asdf-python.git
 
-# Configures ASDF tool and default versions
-ln -sf "$HOME/.dotfiles/.tool-versions" "$HOME/.tool-versions"
-ln -sf "$HOME/.dotfiles/.default-gems" "$HOME/.default-gems"
-ln -sf "$HOME/.dotfiles/.default-npm-packages" "$HOME/.default-npm-packages"
-
-# Install dependencies
-asdf install
-
 number_of_cores=$(sysctl -n hw.ncpu)
 "$HOME/.asdf/bin/private/asdf-exec ruby bin/bundle config --global jobs $((number_of_cores - 1))"
 
-# Install tmux plugin manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Symlink tmux config file to the home directory
-ln -s "$HOME/.dotfiles/.tmux.conf" "$HOME/.tmux.conf"
+# Install dependencies
+asdf install
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

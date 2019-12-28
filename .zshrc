@@ -81,9 +81,7 @@ antibody bundle kiurchv/asdf.plugin.zsh
 
 # aliases
 source $ZSH_CUSTOM/aliases.zsh
-
-# path
+# paths
 source $ZSH_CUSTOM/path.zsh
-
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi

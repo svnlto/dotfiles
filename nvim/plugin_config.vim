@@ -47,7 +47,7 @@ let g:ale_sign_column_always = 1
 let g:ale_linters = {
   \   'elixir': ['credo', 'dialyxir', 'elixir-ls'],
   \   'html': [],
-  \   'javascript': ['prettier', 'tsserver'],
+  \   'javascript': ['eslint', 'tsserver'],
   \   'json': ['prettier'],
   \   'scss': ['prettier'],
   \   'typescript': ['tslint', 'typecheck', 'tsserver'],
