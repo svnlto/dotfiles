@@ -77,7 +77,6 @@ antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 antibody bundle robbyrussell/oh-my-zsh path:plugins/command-not-found
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
-antibody bundle kiurchv/asdf.plugin.zsh
 
 # aliases
 source $ZSH_CUSTOM/aliases.zsh
@@ -87,3 +86,4 @@ source $ZSH_CUSTOM/path.zsh
 
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
+

@@ -31,6 +31,5 @@ export NODE_ENV="development"
 export HSTR_CONFIG=hicolor,case-sensitive
 export HSTR_CONFIG=keywords-matching,hicolor,debug
 
-
 export HISTFILE=~/.zsh_history
-
+export ASDF_DIR=$(brew --prefix asdf)
