@@ -60,9 +60,6 @@ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git;
 asdf plugin-add terraform https://github.com/Banno/asdf-hashicorp.git;
 asdf plugin-add python https://github.com/danhper/asdf-python.git
 
-number_of_cores=$(sysctl -n hw.ncpu)
-"$HOME/.asdf/bin/private/asdf-exec ruby bin/bundle config --global jobs $((number_of_cores - 1))"
-
 # Install dependencies
 asdf install
 

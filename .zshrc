@@ -78,10 +78,14 @@ antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 antibody bundle robbyrussell/oh-my-zsh path:plugins/command-not-found
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
 
-# aliases
-source $ZSH_CUSTOM/aliases.zsh
+source $(brew --prefix asdf)/asdf.sh
+
 # paths
 source $ZSH_CUSTOM/path.zsh
+
+# aliases
+source $ZSH_CUSTOM/aliases.zsh
+
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
 

@@ -77,11 +77,11 @@ cask "grammarly"
 cask "google-drive-file-stream"
 cask "macdown"
 cask "monodraw"
-cask "notion"
 cask "postman"
 cask "gray"
 cask "sourcetree"
 cask "cleanmymac"
+cask "inkdrop"
 
 # Quicklook
 cask "qlcolorcode"
