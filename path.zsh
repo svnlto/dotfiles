@@ -6,12 +6,17 @@
 # Local bin directories before anything else
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Where to find the zsh history 
 export HISTFILE=${HOME}/.zsh_history
 
 # Customize to your needs...
 export PATH=$PATH:~/.bin
+
+# Locales 
+export LANG=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8
 
 # For compilers to find zlib you may need to set:
 export LDFLAGS="${LDFLAGS} -L/usr/local/opt/zlib/lib"
@@ -34,3 +39,5 @@ export HSTR_CONFIG=hicolor,case-sensitive
 export HSTR_CONFIG=keywords-matching,hicolor,debug
 
 export ASDF_DIR=$(brew --prefix asdf)
+
+. $HOME/.asdf/asdf.sh

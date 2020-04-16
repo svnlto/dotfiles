@@ -57,6 +57,7 @@ SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   host          # Hostname section
   dir           # Current directory section
+  aws           # Amazon Web Services section
   git           # Git section (git_branch + git_status)
   node          # Node.js section
   elixir        # Elixir section
@@ -68,6 +69,11 @@ SPACESHIP_PROMPT_ORDER=(
   char          # Prompt character
 )
 
+# aliases
+source $ZSH_CUSTOM/aliases.zsh
+# paths
+source $ZSH_CUSTOM/path.zsh
+
 source <(antibody init)
 antibody bundle denysdovhan/spaceship-prompt
 antibody bundle zsh-users/zsh-autosuggestions
@@ -77,11 +83,8 @@ antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 antibody bundle robbyrussell/oh-my-zsh path:plugins/command-not-found
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
+antibody bundle blimmer/zsh-aws-vault
 
-# aliases
-source $ZSH_CUSTOM/aliases.zsh
-# paths
-source $ZSH_CUSTOM/path.zsh
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
 

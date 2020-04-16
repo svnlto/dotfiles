@@ -42,6 +42,7 @@ Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'lilydjwg/colorizer'
 Plug 'sheerun/vim-polyglot'
 Plug 'sbdchd/neoformat'
+Plug 'tsandall/vim-rego'
 
 " JS - TypeScript - GQL
 Plug 'isRuslan/vim-es6'
