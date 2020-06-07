@@ -69,11 +69,6 @@ SPACESHIP_PROMPT_ORDER=(
   char          # Prompt character
 )
 
-# aliases
-source $ZSH_CUSTOM/aliases.zsh
-# paths
-source $ZSH_CUSTOM/path.zsh
-
 source <(antibody init)
 antibody bundle denysdovhan/spaceship-prompt
 antibody bundle zsh-users/zsh-autosuggestions
@@ -83,8 +78,16 @@ antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 antibody bundle robbyrussell/oh-my-zsh path:plugins/command-not-found
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
-antibody bundle blimmer/zsh-aws-vault
 
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
 
+# paths
+source $ZSH_CUSTOM/path.zsh
+# aliases
+source $ZSH_CUSTOM/aliases.zsh
+# env variables
+source $ZSH_CUSTOM/import_envvars.sh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform

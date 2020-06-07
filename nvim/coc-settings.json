@@ -52,6 +52,11 @@
     "default": "\uf29c"
   },
   "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform"],
+      "initializationOptions": {}
+    },
     "elixir": {
       "command": "/Users/svenlito/.bin/elixir-ls/release/language_server.sh",
       "filetypes": ["elixir", "eelixir"],

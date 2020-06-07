@@ -9,7 +9,7 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-set so=10
+set so=0
 set number
 set relativenumber
 set hidden

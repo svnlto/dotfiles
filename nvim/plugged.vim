@@ -59,6 +59,13 @@ Plug 'posva/vim-vue'
 Plug 'slashmili/alchemist.vim'
 Plug 'elixir-lang/vim-elixir'
 
+" Terraform
+Plug 'hashivim/vim-terraform'
+Plug 'juliosueiras/vim-terraform-completion'
+
+" GoLang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Others
 Plug 'airblade/vim-gitgutter'
 Plug 'jordwalke/VimSplitBalancer'
