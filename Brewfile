@@ -49,6 +49,7 @@ brew "tflint"
 
 # GitHub
 brew "hub"
+brew "gh"
 
 # AWS
 brew "awscli"
@@ -83,6 +84,11 @@ cask "inkdrop"
 cask "postman"
 cask "cleanmymac"
 cask "inkdrop"
+
+# HashiCorp
+cask "consul"
+cask "vault"
+cask "nomad"
 
 # Quicklook
 cask "qlcolorcode"
