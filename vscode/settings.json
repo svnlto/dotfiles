@@ -1,5 +1,23 @@
 {
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "One Dark Theme",
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlab.removeSourceBranch": true,
+    "terraform.indexing": {
+        
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "terraform.languageServer": {
+        "command": "terraform-lsp",
+        "enabled": true,
+        "args": []
+    },
+    "terraform.telemetry.enabled": false
 }

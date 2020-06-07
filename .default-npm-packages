@@ -3,5 +3,3 @@ tslint
 eslint
 neovim
 prettier
-@prettier/plugin-ruby
-vue-language-server

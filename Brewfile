@@ -3,7 +3,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "heroku/brew"
 tap "domt4/autoupdate"
 
 # Binaries
@@ -45,6 +44,8 @@ brew "wxmac"
 brew "hh"
 brew "asdf"
 brew "httpie"
+brew "shellcheck"
+brew "tflint"
 
 # GitHub
 brew "hub"
@@ -56,6 +57,7 @@ brew "awscli"
 brew "imagemagick"
 
 # Apps
+cask "aws-vault"
 cask "alfred"
 cask "arq"
 cask "google-chrome"
@@ -68,18 +70,17 @@ cask "flux"
 cask "iterm2"
 cask "github"
 cask "visual-studio-code"
-cask "google-cloud-sdk"
 cask "istat-menus"
 cask "little-snitch"
 cask "1password"
+cask "1password-cli"
 cask "dash"
 cask "grammarly"
 cask "google-drive-file-stream"
 cask "macdown"
 cask "monodraw"
+cask "inkdrop"
 cask "postman"
-cask "gray"
-cask "sourcetree"
 cask "cleanmymac"
 cask "inkdrop"
 
@@ -98,6 +99,5 @@ cask "font-hasklig"
 
 # Mac App Store
 mas "The Unarchiver", id: 425424353
-mas "Notability", id: 409183694
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694

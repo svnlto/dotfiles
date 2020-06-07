@@ -57,6 +57,7 @@ SPACESHIP_PROMPT_ORDER=(
   user          # Username section
   host          # Hostname section
   dir           # Current directory section
+  aws           # Amazon Web Services section
   git           # Git section (git_branch + git_status)
   node          # Node.js section
   elixir        # Elixir section
@@ -78,14 +79,15 @@ antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 antibody bundle robbyrussell/oh-my-zsh path:plugins/command-not-found
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
 
-source $(brew --prefix asdf)/asdf.sh
-
-# paths
-source $ZSH_CUSTOM/path.zsh
-
-# aliases
-source $ZSH_CUSTOM/aliases.zsh
-
 # Auto start tmux
 if [ "$TMUX" = "" ]; then tmux; fi
 
+# paths
+source $ZSH_CUSTOM/path.zsh
+# aliases
+source $ZSH_CUSTOM/aliases.zsh
+# env variables
+source $ZSH_CUSTOM/import_envvars.sh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
