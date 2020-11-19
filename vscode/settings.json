@@ -15,9 +15,11 @@
         ]
     },
     "terraform.languageServer": {
-        "command": "terraform-lsp",
-        "enabled": true,
-        "args": []
+        "external": true,
+        "args": [
+            "serve"
+        ]
     },
-    "terraform.telemetry.enabled": false
+    "terraform.telemetry.enabled": false,
+    "python.languageServer": "Microsoft"
 }

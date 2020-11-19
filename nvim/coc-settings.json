@@ -1,25 +1,12 @@
 {
-  "coc.preferences.autoTrigger": "always",
-  "coc.preferences.diagnostic.enable": false,
   "coc.preferences.formatOnType": false,
   "coc.preferences.jumpCommand": "edit",
-  "coc.preferences.minTriggerInputLength": 1,
-  "coc.preferences.noselect": false,
-  "coc.preferences.snippetIndicator": "\ue7a2",
-  "coc.preferences.timeout": 2000,
-  "coc.preferences.triggerAfterInsertEnter": false,
   "coc.preferences.watchmanPath": "/usr/local/bin/watchman",
   "coc.preferences.colorSupport": true,
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.source.around.priority": 10,
   "coc.source.buffer.priority": 11,
-  "coc.source.dictionary.priority": 20,
-  "coc.source.emoji.priority": 22,
   "coc.source.file.priority": 12,
-  "coc.source.snippets.priority": 2,
-  "coc.source.ultisnips.priority": 2,
-  "coc.source.word.priority": 21,
-
   "eslint.enable": true,
 
   "suggest.detailMaxLength": 30,
@@ -54,8 +41,7 @@
   "languageserver": {
     "terraform": {
       "command": "terraform-lsp",
-      "filetypes": ["terraform"],
-      "initializationOptions": {}
+      "filetypes": ["terraform"]
     },
     "elixir": {
       "command": "/Users/svenlito/.bin/elixir-ls/release/language_server.sh",

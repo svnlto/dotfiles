@@ -25,6 +25,10 @@ ln -s "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
 rm -rf "$HOME/.config/nvim"
 ln -s "$HOME/.dotfiles/nvim/" "$HOME/.config/nvim"
 
+# Move alacritty config
+rm -rf "$HOME/.config/alacritty"
+ln -s "$HOME/.dotfiles/config/alacritty" "$HOME/.config/alacritty"
+
 # Symlink the ssh config file to the home directory
 ln -s "$HOME/.dotfiles/.ssh/" "$HOME/.ssh"
 
