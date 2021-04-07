@@ -18,9 +18,3 @@ for row in $(echo "${ev}" | jq -r -c '.details.sections[0].fields[] | @base64');
   echo "Setting environment variable $(_envvars '.t')"
   export "$(_envvars '.t')=$(_envvars '.v')"
 done
-
-aws_conf=$(op get item "aws config" | jq -r -c '.details.notesPlain')
-aws_creds=$(op get item "aws credentials" | jq -r -c '.details.notesPlain')
-
-echo "${aws_conf}" >| "${HOME}/.aws/config"
-echo "${aws_creds}" >| "${HOME}/.aws/credentials"

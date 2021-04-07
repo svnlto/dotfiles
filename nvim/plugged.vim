@@ -14,11 +14,7 @@ Plug 'remko/detectindent'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'Townk/vim-autoclose'
-
 Plug 'vim-scripts/matchparenpp'
-" replace the above with this "
-" https://github.com/itchyny/vim-parenmatch "
-
 
 " File explore
 Plug 'scrooloose/nerdcommenter'
@@ -36,7 +32,9 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern' }
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Syntax Highlight - Formatting
 Plug 'lilydjwg/colorizer'
@@ -53,11 +51,6 @@ Plug 'moll/vim-node'
 Plug 'jparise/vim-graphql'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
-Plug 'posva/vim-vue'
-
-" Elixir
-Plug 'slashmili/alchemist.vim'
-Plug 'elixir-lang/vim-elixir'
 
 " Terraform
 Plug 'hashivim/vim-terraform'
@@ -70,8 +63,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'airblade/vim-gitgutter'
 Plug 'jordwalke/VimSplitBalancer'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'mattn/gist-vim'
-Plug 'mattn/webapi-vim'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-sensible'
 
@@ -85,6 +76,7 @@ Plug 'rakr/vim-one'
 Plug 'joshdick/onedark.vim'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'dunstontc/vim-vscode-theme'
 
 Plug 'ryanoasis/vim-devicons'
 

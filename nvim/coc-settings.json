@@ -40,19 +40,13 @@
   },
   "languageserver": {
     "terraform": {
-      "command": "terraform-lsp",
-      "filetypes": ["terraform"]
-    },
-    "elixir": {
-      "command": "/Users/svenlito/.bin/elixir-ls/release/language_server.sh",
-      "filetypes": ["elixir", "eelixir"],
-      "trace.server": "verbose",
-      "rootPatterns": ["mix.exs"],
-      "initializationOptions": {
-        "elixirLS": {
-          "dialyzerEnabled": false
-        }
-      },
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
+      "initializationOptions": {},
       "settings": {}
     }
   }

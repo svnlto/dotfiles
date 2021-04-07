@@ -34,8 +34,6 @@ brew "the_silver_searcher"
 brew "tmux"
 brew "neovim"
 brew "watchman"
-brew "kubectl"
-brew "kubernetes-helm"
 brew "jq"
 brew "cmake"
 brew "diff-so-fancy"
@@ -47,17 +45,12 @@ brew "shellcheck"
 brew "tflint"
 
 # GitHub
-brew "hub"
 brew "gh"
 
 # AWS
 brew "awscli"
 
-# Image manipulation
-brew "imagemagick"
-
 # Apps
-cask "aws-vault"
 cask "alfred"
 cask "arq"
 cask "google-chrome"
@@ -75,14 +68,12 @@ cask "little-snitch"
 cask "1password"
 cask "1password-cli"
 cask "dash"
-cask "grammarly"
 cask "google-drive-file-stream"
-cask "macdown"
 cask "monodraw"
-cask "inkdrop"
 cask "postman"
 cask "cleanmymac"
 cask "inkdrop"
+cask "macdown"
 
 # HashiCorp
 cask "consul"
@@ -105,4 +96,4 @@ cask "font-hasklig"
 # Mac App Store
 mas "The Unarchiver", id: 425424353
 mas "Numbers", id: 409203825
-mas "Keynote", id: 409183694
+mas "grammarly", id: 1462114288
