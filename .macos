@@ -84,7 +84,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Enable press and hold key repeat
 defaults delete -g ApplePressAndHoldEnabled
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Disable natural scroll
 defaults write -g com.apple.swipescrolldirection -bool NO

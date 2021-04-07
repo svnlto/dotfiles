@@ -1,18 +1,21 @@
+[credential]
+	helper = osxkeychain
 [user]
-	name = Sven Lito
-	email = sven.l+github@pomelofashion.com
+  name = Sven Lito
+  email = me@svenlito.com
+	signingkey = 21E9F3D7
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
 [color]
   ui = always
 [core]
@@ -20,7 +23,7 @@
   quotepath = false
   compression = 9
   preloadindex = true
-	excludesfile = /Users/svenlito/.gitignore_global
+  excludesfile = /Users/svenlito/.gitignore_global
   editor = nvim
   pager = diff-so-fancy | less --tabs=2 -RFX
 [web]
@@ -33,20 +36,22 @@
   helper = osxkeychain
 [push]
   default = simple
+[pull]
+  rebase = false
+[init]
+  defaultBranch = master
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
   required = true
-	process = git-lfs filter-process
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  process = git-lfs filter-process
 [commit]
-	template = /Users/svenlito/.stCommitMsg
+  template = /Users/svenlito/.stCommitMsg
+  gpgsign = true
+[protocol]
+  version = 2
+[gpg]
+  program = /usr/local/bin/gpg
