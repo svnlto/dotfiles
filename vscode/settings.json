@@ -1,4 +1,7 @@
 {
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.showBracketsInRuler": false,
+    "bracketPairColorizer.rulerPosition": "Left",
     "workbench.colorTheme": "GitHub Dark",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -25,8 +28,31 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "aws.profile": "profile:default",
+    "aws.profile": "profile:pomelo-staging",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "yaml.schemas": {
+        "file:///Users/svenlito/.vscode/extensions/atlassian.atlascode-2.8.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.enabled": true,
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "e7c88770-dd3f-468a-8fd1-1394499ffe33",
+            "enabled": true,
+            "name": "My pomelofashion Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "c5a2f770-cd5b-4a8a-b550-854c401f5508",
+            "monitor": true
+        }
+    ],
+    "atlascode.jira.statusbar.enabled": false,
+    "atlascode.jira.statusbar.showLogin": true,
+    "atlascode.jira.statusbar.showProduct": true,
+    "atlascode.jira.statusbar.showUser": true,
+    "editor.tabSize": 2,
+    "editor.rulers": [80],
+    "terminal.integrated.shell.os": "/usr/local/bin/zsh",
+    "workbench.iconTheme": "city-lights-icons-vsc"
 }

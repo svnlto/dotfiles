@@ -73,10 +73,6 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install',
 
 " Colorscheme
 Plug 'rakr/vim-one'
-Plug 'joshdick/onedark.vim'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'dunstontc/vim-vscode-theme'
 
 Plug 'ryanoasis/vim-devicons'
 
