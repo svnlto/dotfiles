@@ -36,6 +36,9 @@ alias vim="nvim"
 # Terraform
 alias t='terraform'
 
+# 1password env vars
+alias loadenv='load_env_vars'
+
 # K8s
 alias k='kubectl'
 alias kn='kubens'

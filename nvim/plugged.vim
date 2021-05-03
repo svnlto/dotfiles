@@ -76,4 +76,12 @@ Plug 'rakr/vim-one'
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
+
 call plug#end()

@@ -7,8 +7,6 @@
   "coc.source.around.priority": 10,
   "coc.source.buffer.priority": 11,
   "coc.source.file.priority": 12,
-  "eslint.enable": true,
-
   "suggest.detailMaxLength": 30,
   "suggest.minTriggerInputLength": 2,
   "suggest.completionItemKindLabels": {
@@ -38,16 +36,10 @@
     "typeParameter": "\uf278",
     "default": "\uf29c"
   },
-  "languageserver": {
-    "terraform": {
-      "command": "terraform-ls",
-      "args": ["serve"],
-      "filetypes": [
-        "terraform",
-        "tf"
-      ],
-      "initializationOptions": {},
-      "settings": {}
-    }
-  }
+  "languageserver": {},
+  "git.addedSign.hlGroup": "GitGutterAdd",
+  "git.changedSign.hlGroup": "GitGutterChange",
+  "git.removedSign.hlGroup": "GitGutterDelete",
+  "git.topRemovedSign.hlGroup": "GitGutterDelete",
+  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete"
 }

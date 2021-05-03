@@ -17,18 +17,34 @@
             "**/.terraform/**/*"
         ]
     },
-    "terraform.languageServer": {
-        "external": true,
-        "args": [
-            "serve"
-        ]
+    "workbench.colorCustomizations": {
+      "terminalCursor.background": "#282a36",
+      "terminalCursor.foreground": "#97979b",
+      "terminal.selectionBackground": "#97979b33",
+      "terminal.foreground": "#eff0eb",
+      "terminal.ansiBlack": "#282a36",
+      "terminal.ansiRed": "#ff5c57",
+      "terminal.ansiGreen": "#5af78e",
+      "terminal.ansiYellow": "#f3f99d",
+      "terminal.ansiBlue": "#57c7ff",
+      "terminal.ansiMagenta": "#ff6ac1",
+      "terminal.ansiCyan": "#9aedfe",
+      "terminal.ansiWhite": "#f1f1f0",
+      "terminal.ansiBrightBlack": "#686868",
+      "terminal.ansiBrightRed": "#ff5c57",
+      "terminal.ansiBrightGreen": "#5af78e",
+      "terminal.ansiBrightYellow": "#f3f99d",
+      "terminal.ansiBrightBlue": "#57c7ff",
+      "terminal.ansiBrightMagenta": "#ff6ac1",
+      "terminal.ansiBrightCyan": "#9aedfe",
+      "terminal.ansiBrightWhite": "#eff0eb"
     },
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
     "terraform.telemetry.enabled": false,
     "python.languageServer": "Microsoft",
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "aws.profile": "profile:pomelo-staging",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -53,6 +69,50 @@
     "atlascode.jira.statusbar.showUser": true,
     "editor.tabSize": 2,
     "editor.rulers": [80],
-    "terminal.integrated.shell.os": "/usr/local/bin/zsh",
-    "workbench.iconTheme": "city-lights-icons-vsc"
+    "workbench.iconTheme": "city-lights-icons-vsc",
+    "workbench.settings.openDefaultKeybindings": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "terraform.languageServer": {
+
+        "external": true,
+        "pathToBinary": "/usr/local/bin/terraform-ls",
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    "terraform-ls.experimentalFeatures": {
+        "validateOnSave": true
+    },
+    "terraform": {
+        "editor.formatOnSave": true
+    },
+    "terminal.integrated.shell.osx": "zsh",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.cursorStyle": "line-thin",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "atlascode.bitbucket.contextMenus.enabled": false,
+    "atlascode.bitbucket.explorer.nestFilesEnabled": false,
+    "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
+    "atlascode.bitbucket.explorer.relatedJiraIssues.enabled": false,
+    "atlascode.bitbucket.explorer.showReviewedPullRequests": false,
+    "atlascode.bitbucket.issues.monitorEnabled": false,
+    "atlascode.bitbucket.pipelines.explorerEnabled": false,
+    "atlascode.bitbucket.pipelines.monitorEnabled": false,
+    "atlascode.bitbucket.pipelines.hideEmpty": false,
+    "atlascode.bitbucket.statusbar.enabled": false,
+    "vim.enableNeovim": true,
+    "terraform.path": "/Users/svenlito/.asdf/shims/terraform",
+    "terraform.formatOnSave": true,
+    "terraform.formatVarsOnSave": true,
+    "files.associations": {
+        "*.ctmpl": "hcl",
+        "*.tf": "terraform",
+        "*.tfvars": "terraform"
+    },
+    "go.toolsManagement.autoUpdate": true
 }

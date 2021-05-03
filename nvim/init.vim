@@ -76,10 +76,6 @@ nnoremap <leader>ev :e $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>pp :setlocal paste!<cr>
 
-map <Leader>bn :MBEbn <cr>
-map <Leader>bp :MBEbp <cr>
-map <Leader>bt :MBEToggle <cr>
-
 nnoremap <Leader>a :Ack<space>
 
 autocmd VimEnter * call StartUp()
@@ -88,4 +84,3 @@ autocmd VimEnter * wincmd p
 function! StartUp()
   execute 'NERDTree' getcwd()
 endfunction
-
